@@ -71,7 +71,7 @@ const TheArtSection = () => {
             <div className="grid grid-cols-12 gap-4">
               {/* Main Large Image - Perfume Bottle */}
               <div className="col-span-7 row-span-2">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl shadow-xl">
+                <div className="relative aspect-3/4 w-full overflow-hidden rounded-2xl shadow-xl">
                   <Image
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&h=1000&fit=crop"
                     alt="Main perfume bottle"
