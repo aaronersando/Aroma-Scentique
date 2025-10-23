@@ -13,31 +13,31 @@ const ContactDetailsSection = () => {
       icon: Mail,
       title: "Email",
       subtitle: "For general inquiries:",
-      content: "contact@aromascentique.com",
-      link: "mailto:contact@aromascentique.com",
+      content: "aromascentiqueph@gmail.com",
+      link: "mailto:aromascentiqueph@gmail.com",
     },
     {
       id: 2,
       icon: Phone,
       title: "Phone",
       subtitle: "Customer Service:",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      content: "09696410409",
+      link: "tel:09696410409",
     },
     {
       id: 3,
       icon: MapPin,
       title: "Location",
-      subtitle: "123 Fragrance Lane",
-      content: "Suite 101\nNew York, NY 10001\nUnited States",
+      subtitle: "Visit Us",
+      content: "Rufina Golden Village, Malolos \nCity, Bulacan",
       link: null,
     },
     {
       id: 4,
       icon: Clock,
       title: "Hours",
-      subtitle: "Monday - Friday:",
-      content: "9:00 AM - 6:00 PM EST\n\nSaturday:\n10:00 AM - 4:00 PM EST",
+      subtitle: "Everyday",
+      content: "8:00 AM - 5:00 PM",
       link: null,
     },
   ];
@@ -68,18 +68,16 @@ const ContactDetailsSection = () => {
               className="rounded-2xl overflow-hidden mb-8 border-2"
               style={{ borderColor: colors.gold }}
             >
-              <div
-                className="w-full h-80 flex items-center justify-center"
-                style={{ backgroundColor: colors.accentSecondary }}
-              >
-                <MapPin size={48} style={{ color: colors.goldDark }} />
-                <p
-                  className="ml-4 font-inter text-lg"
-                  style={{ color: colors.primary }}
-                >
-                  Google Maps would be embedded here
-                </p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.864355603947!2d120.81494977487743!3d14.832869085681436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396523069434785%3A0xf9ae9c0c6c2e9aa5!2sRufina%20Golden%20Village!5e0!3m2!1sen!2sph!4v1761227197067!5m2!1sen!2sph"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-80"
+              />
             </div>
 
             <div
