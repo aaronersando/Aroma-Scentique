@@ -34,19 +34,18 @@ const TheArtSection = () => {
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  At Aroma Scentique, we believe that fragrance is an art form.
-                  Each perfume is meticulously crafted by our master perfumers,
-                  who blend rare and precious ingredients to create scents that
-                  evoke emotions and capture moments.
+                  At Aroma Scentique, we see fragrance as more than just a scent
+                  — it’s an art form. Every bottle is carefully handcrafted,
+                  inspired by luxury designer perfumes, and made with premium
+                  local oils and long-lasting formulations.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Our boutique perfume house was established with a passion for
-                  creating unique, artisanal fragrances that tell a story. We
-                  source the finest ingredients from around the world and
-                  combine traditional techniques with innovative approaches.
+                  Our small business began with a passion to make
+                  luxury-inspired perfumes affordable and accessible, blending
+                  global inspiration with Filipino craftsmanship.
                 </p>
               </div>
               <Link href="/about">

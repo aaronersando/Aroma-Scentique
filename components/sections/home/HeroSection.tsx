@@ -60,8 +60,10 @@ const HeroSection = () => {
                 className="text-base md:text-lg font-inter mb-10 leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                Artisanal perfumes crafted with passion and precision. Each
-                scent tells a unique story, evoking emotions and memories.
+                Inspired by world-class luxury scents, Aroma Scentique creates
+                handcrafted perfumes made with passion, precision, and purpose.
+                Each scent captures individuality and turns everyday moments
+                into something unforgettable.
               </p>
 
               {/* Buttons */}

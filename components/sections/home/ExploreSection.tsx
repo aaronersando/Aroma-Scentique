@@ -12,7 +12,7 @@ const ExploreSection = () => {
         "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=1200&h=900&fit=crop",
       title: "MEN",
       description:
-        "Rich and sophisticated fragrances for the modern gentleman.",
+        "Rich, modern, and long-lasting scents inspired by iconic masculine fragrances — perfect for daily wear or special occasions.",
       href: "/products?category=men",
     },
     {
@@ -20,7 +20,8 @@ const ExploreSection = () => {
       image:
         "https://images.unsplash.com/photo-1541643600914-78b084683601?w=1200&h=900&fit=crop",
       title: "WOMEN",
-      description: "Elegant and captivating scents for the contemporary woman.",
+      description:
+        "Elegant, alluring, and timeless perfumes inspired by world-renowned feminine fragrances — made to captivate and empower",
       href: "/products?category=women",
     },
   ];
@@ -42,8 +43,8 @@ const ExploreSection = () => {
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            Browse our collections by fragrance families to find your perfect
-            scent match.
+            Browse our inspired collections and find the scent that truly
+            defines you.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

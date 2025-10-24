@@ -8,46 +8,48 @@ const FeaturedSection = () => {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&h=800&fit=crop",
-      category: "WOMEN",
-      title: "Rose Velvet",
-      description: "A delicate rose parfum with warm amber base notes.",
+        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&h=800&fit=crop",
+      category: "MEN",
+      title: "Invictus Inspired",
+      description:
+        "Inspired by Paco Rabanne Invictus — bold and energetic with marine notes, grapefruit, and ambergris. Symbolizes victory and strength.",
       featured: true,
       bestSeller: true,
-      href: "/products/rose-velvet",
+      href: "/products/invictus-inspired",
     },
     {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&h=800&fit=crop",
       category: "MEN",
-      title: "Cedar Noir",
+      title: "Acqua Di Gio Inspired",
       description:
-        "Woody undertones with a hint of spice and citrus top notes.",
+        "Inspired by Giorgio Armani Acqua Di Gio — fresh marine accords with jasmine and cedarwood for timeless masculine elegance.",
       featured: true,
-      href: "/products/cedar-noir",
+      href: "/products/acqua-di-gio-inspired",
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&h=800&fit=crop",
-      category: "MEN",
-      title: "Amber Oud",
-      description: "Rich and warm with exotic spices and deep resinous notes.",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&h=800&fit=crop",
+      category: "WOMEN",
+      title: "YSL Libre Inspired",
+      description:
+        "Inspired by Yves Saint Laurent Libre — a bold floral blend of lavender, orange blossom, and vanilla that radiates feminine freedom.",
       featured: true,
-      href: "/products/amber-oud",
+      href: "/products/ysl-libre-inspired",
     },
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&h=800&fit=crop",
-      category: "MEN",
-      title: "Marine Breeze",
+        "https://images.unsplash.com/photo-1616628188599-3b3a2e6c9406?w=800&h=800&fit=crop",
+      category: "WOMEN",
+      title: "Baccarat Rouge Inspired",
       description:
-        "Light and airy with oceanic notes and a fresh citrus finish.",
+        "Inspired by Maison Francis Kurkdjian Baccarat Rouge 540 — luxurious and luminous with saffron, amberwood, and jasmine.",
       featured: true,
       bestSeller: true,
-      href: "/products/marine-breeze",
+      href: "/products/baccarat-rouge-inspired",
     },
   ];
 
@@ -68,8 +70,9 @@ const FeaturedSection = () => {
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            Discover our curated selection of signature scents, each crafted
-            with precision and passion to evoke unique emotions and memories.
+            Explore our growing collection of handcrafted perfumes —
+            thoughtfully inspired by globally loved designer fragrances, made
+            locally for every personality and mood.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">

@@ -8,30 +8,39 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sophia Reynolds",
-      location: "New York, USA",
-      avatar: "https://i.pravatar.cc/150?img=1",
+      name: "Christian Vargas",
+      location: "Bulacan, PH",
+      avatar: "https://i.pravatar.cc/150?img=20",
       rating: 5,
       testimonial:
-        "The Rose Velvet fragrance is absolutely divine. It lasts all day and I receive compliments every time I wear it. Truly a masterpiece.",
+        "Invictus Inspired is my everyday scent now — fresh, powerful, and lasts all day. Totally worth it!",
     },
     {
       id: 2,
-      name: "James Mitchell",
-      location: "London, UK",
-      avatar: "https://i.pravatar.cc/150?img=12",
+      name: "Luis M. Cruz",
+      location: "Pampanga, PH",
+      avatar: "https://i.pravatar.cc/150?img=32",
       rating: 5,
       testimonial:
-        "Cedar Noir has become my signature scent. The woody notes with hints of spice create a sophisticated fragrance that is perfect for any occasion.",
+        "I love YSL Libre Inspired! It smells luxurious and elegant, just like the original, but more affordable.",
     },
     {
       id: 3,
-      name: "Elena Moretti",
-      location: "Milan, Italy",
-      avatar: "https://i.pravatar.cc/150?img=5",
+      name: "Patrick Jerome Custodio",
+      location: "Manila, PH",
+      avatar: "https://i.pravatar.cc/150?img=47",
       rating: 5,
       testimonial:
-        "I've tried many luxury perfumes, but Amber Oud from Aroma Scentique stands out. The blend of exotic spices and resinous notes is unparalleled.",
+        "Acqua Di Gio Inspired smells premium and clean. My friends can’t even tell it’s not the designer one.",
+    },
+    {
+      id: 4,
+      name: "Aldrin San Pedro",
+      location: "Malolos, Bulacan",
+      avatar: "https://i.pravatar.cc/150?img=56",
+      rating: 5,
+      testimonial:
+        "Baccarat Rouge Inspired is stunning — it lingers beautifully and gets me compliments every time.",
     },
   ];
 
@@ -52,8 +61,8 @@ const TestimonialsSection = () => {
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            Discover what our clients have to say about their experience with
-            our artisanal fragrances.
+            Discover what our customers love about their favorite Aroma
+            Scentique fragrances.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
