@@ -11,7 +11,7 @@ const OurJourneySection = () => {
       year: "2024",
       title: "The Beginning",
       description:
-        "Aroma Scentique was founded with a dream to create handcrafted perfumes that blend premium quality with affordability. Starting from small batches, we aimed to make every scent a reflection of confidence and individuality.",
+        "Aroma Scentique was born from a dream to bring handcrafted, globally inspired perfumes to local scent lovers. After months of testing and perfecting small batches, our first blends came to life — a mix of creativity, confidence, and artistry.",
       image:
         "https://images.unsplash.com/photo-1611934180042-da791b4091e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJlZ2lubmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=1000",
     },
@@ -20,7 +20,7 @@ const OurJourneySection = () => {
       year: "2024",
       title: "First Collection Launch",
       description:
-        "After months of testing and refining, our first signature collection was born — each scent designed to evoke emotion and self-expression for every personality.",
+        "We proudly released our first signature line, inspired by timeless perfumes worldwide. Each scent told a story — crafted to reflect elegance, warmth, and individuality.",
       image:
         "https://images.unsplash.com/photo-1647951681118-f89d0eef3a1f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zmlyc3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
     },
@@ -29,7 +29,7 @@ const OurJourneySection = () => {
       year: "2024",
       title: "Building Our Brand",
       description:
-        "Through social media and pop-up sales, Aroma Scentique found its growing community. Every review and purchase inspired us to keep perfecting our craft.",
+        "Through social media, word-of-mouth, and pop-up stalls, we began connecting with a growing community of fragrance lovers who shared our belief that luxury can be simple and sincere.",
       image:
         "https://images.unsplash.com/photo-1517768692594-b4295586b7d6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVpbGR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
     },
@@ -38,7 +38,7 @@ const OurJourneySection = () => {
       year: "2025",
       title: "Growing Locally",
       description:
-        "With more customers discovering our scents, we expanded through online sales and local retail partners, bringing artisanal perfumes closer to every Filipino.",
+        "By early 2025, our perfumes reached more customers through online sales and local shop collaborations. Every review and returning customer strengthened our mission to make quality scents for all.",
       image:
         "https://images.unsplash.com/photo-1598258710957-db8614c2881e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuaWxhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000",
     },
@@ -47,7 +47,7 @@ const OurJourneySection = () => {
       year: "2025",
       title: "Crafting Our Identity",
       description:
-        "We focused on improving quality, sustainability, and our brand identity — staying true to our mission of creating scents that represent authenticity and emotion.",
+        "As we evolve, we continue refining our formulas, improving sustainability, and shaping a clear, authentic brand identity — all while staying true to our roots in craftsmanship and creativity.",
       image:
         "https://images.unsplash.com/photo-1628927124199-a8a2a5394392?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3JhZnRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
     },
@@ -56,7 +56,7 @@ const OurJourneySection = () => {
       year: "2025",
       title: "Looking Ahead",
       description:
-        "As we continue to grow, we aim to expand our collection and offer customizable fragrances — sharing the art of affordable luxury with more people nationwide.",
+        "The journey has just begun. We’re working to expand our collections, offer customizable fragrances, and reach more perfume lovers across the Philippines — keeping passion, quality, and sincerity at the heart of everything we do.",
       image:
         "https://images.unsplash.com/photo-1528368250370-51fa780d345b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9va2luZyUyMGFoZWFkfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000",
     },

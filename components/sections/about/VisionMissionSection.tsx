@@ -138,10 +138,9 @@ const VisionMissionSection = () => {
                 className="text-base font-inter leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                To craft high-quality, handcrafted perfumes that evoke emotion
-                and tell stories. We’re dedicated to making premium scents
-                affordable while maintaining artistry, authenticity, and
-                sustainability.
+                To craft exceptional perfumes inspired by global luxury
+                fragrances — using fine, ethically sourced ingredients while
+                making every scent accessible, expressive, and enduring.
               </p>
             </CardContent>
           </Card>

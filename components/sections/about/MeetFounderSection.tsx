@@ -36,11 +36,12 @@ const MeetFounderSection = () => {
                 className="text-base font-inter leading-relaxed mb-6"
                 style={{ color: colors.foreground }}
               >
-                Meet Joseph Cagara, the visionary behind Aroma Scentique. His
-                fascination with scents began early — captivated by how a single
-                fragrance could express emotion and confidence. Realizing that
-                premium perfumes were often out of reach for many, he set out to
-                redefine what luxury means.
+                Meet Joseph Cagara, the visionary behind Aroma Scentique.
+                Inspired by how scents can express emotion and confidence,
+                Joseph wanted to make the art of perfumery accessible to
+                everyone. After studying fragrance composition and collaborating
+                with experts, he created a brand that blends world-class quality
+                with local artistry.
               </p>
 
               {/* Quote Card */}
@@ -56,9 +57,8 @@ const MeetFounderSection = () => {
                     className="text-base font-inter italic leading-relaxed mb-3"
                     style={{ color: colors.primary }}
                   >
-                    “I wanted to create perfumes that rival high-end brands in
-                    quality but remain affordable — scents that make people feel
-                    confident, elegant, and empowered every day.”
+                    “True luxury isn’t about the price — it’s the feeling it
+                    leaves behind.”
                   </p>
                   <p
                     className="text-sm font-montserrat font-semibold"

@@ -17,15 +17,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 2,
-      name: "Luis M. Cruz",
-      location: "Pampanga, PH",
-      avatar: "https://i.pravatar.cc/150?img=32",
-      rating: 5,
-      testimonial:
-        "I love YSL Libre Inspired! It smells luxurious and elegant, just like the original, but more affordable.",
-    },
-    {
-      id: 3,
       name: "Patrick Jerome Custodio",
       location: "Manila, PH",
       avatar: "https://i.pravatar.cc/150?img=47",
@@ -34,7 +25,7 @@ const TestimonialsSection = () => {
         "Acqua Di Gio Inspired smells premium and clean. My friends can’t even tell it’s not the designer one.",
     },
     {
-      id: 4,
+      id: 3,
       name: "Aldrin San Pedro",
       location: "Malolos, Bulacan",
       avatar: "https://i.pravatar.cc/150?img=56",

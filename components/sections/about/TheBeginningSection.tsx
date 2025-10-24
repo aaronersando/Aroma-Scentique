@@ -49,17 +49,19 @@ const TheBeginningSection = () => {
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  We founded Aroma Scentique to bridge the gap between luxury
-                  and affordability. Many people deserve to experience
-                  sophistication through scent — without breaking the bank.
+                  We noticed how luxury perfumes often came with prices that few
+                  could afford. So, we set out to change that. Aroma Scentique
+                  crafts artisanal perfumes that deliver the same
+                  sophistication, longevity, and richness found in designer
+                  fragrances — but at an honest, affordable price.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Each fragrance we create is made with care, precision, and
-                  passion. For us, true luxury isn’t defined by price, but by
-                  craftsmanship and how a scent makes you feel.
+                  Every scent is created with care and passion, proving that
+                  true luxury isn’t about the label, but the quality and emotion
+                  behind it.
                 </p>
               </div>
             </div>

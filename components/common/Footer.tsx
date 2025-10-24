@@ -28,8 +28,8 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-[#5C5049] text-sm mb-6 font-inter leading-relaxed">
-              Artisanal perfumes inspired by nature. Discover our top picks and
-              signature scents.
+              Inspired by the world’s most captivating perfumes, Aroma Scentique
+              brings you artisanal scents that tell a story.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-4">
