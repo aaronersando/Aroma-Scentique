@@ -106,9 +106,8 @@ const ContactDetailsSection = () => {
                 className="text-base font-inter mb-4 leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                We also offer personalized consultations by appointment, where
-                our fragrance specialists can help you discover scents that
-                complement your unique preferences and personality.
+                For meetups, collaborations, or custom scent requests, feel free
+                to reach out — we’d love to connect!
               </p>
               <div className="mt-6">
                 <h4
@@ -125,7 +124,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Custom fragrance consultations
+                    Personalized scent recommendations
                   </li>
                   <li
                     className="text-sm font-inter flex items-start"
@@ -134,7 +133,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Perfume workshops (weekends only)
+                    Custom scent requests (limited availability)
                   </li>
                   <li
                     className="text-sm font-inter flex items-start"
@@ -143,7 +142,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Private shopping appointments
+                    Pop-up event sampling and collaborations
                   </li>
                 </ul>
               </div>

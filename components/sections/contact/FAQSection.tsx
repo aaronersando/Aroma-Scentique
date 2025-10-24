@@ -9,27 +9,27 @@ const FAQSection = () => {
   const faqs = [
     {
       id: 1,
-      question: "Do you offer international shipping?",
+      question: "Do you have a physical store?",
       answer:
-        "Yes, we ship to most countries worldwide. International shipping rates and delivery times vary by location. We use premium carriers to ensure your fragrances arrive in perfect condition, typically within 7-14 business days depending on the destination. Please view our shipping policy for more details.",
+        "Not yet! We currently sell online and through local pop-ups, partner or you can visit us directly in our subdivision. Follow us on social media for updates on upcoming events and future boutique plans.",
     },
     {
       id: 2,
-      question: "What is your return policy?",
+      question: "Can I return or exchange my order?",
       answer:
-        "We accept returns within 30 days of delivery for unopened products in their original packaging. Due to the nature of fragrances, we cannot accept returns of opened or used products unless they are defective. Please contact our customer service team to initiate a return process.",
+        "We accept returns or replacements for damaged or defective products within 7 days of delivery. Due to hygiene reasons, opened perfumes cannot be returned unless there’s an issue with the product.",
     },
     {
       id: 3,
-      question: "Do you offer samples?",
+      question: "Do you sell perfume testers or samples?",
       answer:
-        "Yes, we offer a discovery set that includes samples of our signature fragrances. This curated collection allows you to experience our scents before committing to a full-size bottle. You can also request specific samples with any full-size purchase, and our boutique visitors receive complimentary samples with every visit.",
+        "Yes! We offer mini or sample bottles so you can try our scents before purchasing a full-sized one. You can also receive free samples with certain orders or during our pop-up events.",
     },
     {
       id: 4,
-      question: "Are your products cruelty-free?",
+      question: "Are your perfumes cruelty-free?",
       answer:
-        "Absolutely. We do not test on animals and work only with suppliers who adhere to the same ethical standards. Our commitment to ethical practices extends throughout our supply chain, from ingredient sourcing to manufacturing and packaging. All our products are certified cruelty-free by recognized international organizations.",
+        "Absolutely. We do not test on animals and ensure that our ingredients come from trusted, ethical suppliers.",
     },
   ];
 
