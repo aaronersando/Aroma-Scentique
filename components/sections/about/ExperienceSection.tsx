@@ -22,9 +22,9 @@ const ExperienceSection = () => {
           className="text-base md:text-lg font-inter mb-8 max-w-2xl mx-auto leading-relaxed"
           style={{ color: colors.accentForeground }}
         >
-          Discover our collection of artisanal perfumes crafted to evoke
-          emotions and create lasting memories. Each fragrance tells a unique
-          story, waiting to become part of yours.
+          Explore our growing collection of handcrafted perfumes made to inspire
+          confidence and express individuality. Each scent is carefully blended
+          to tell a story—ready to become part of yours.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/products">
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
                 backgroundColor: "transparent",
               }}
             >
-              Visit Our Boutique
+              Discover the scent that defines you.
             </Button>
           </Link>
         </div>

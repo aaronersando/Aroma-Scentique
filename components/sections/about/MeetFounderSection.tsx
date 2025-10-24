@@ -36,12 +36,11 @@ const MeetFounderSection = () => {
                 className="text-base font-inter leading-relaxed mb-6"
                 style={{ color: colors.foreground }}
               >
-                Claire Laurent, the creative force behind Aroma Scentique,
-                brings over two decades of experience in the world of fine
-                perfumery. Trained in Grasse, the perfume capital of the world,
-                Claire apprenticed under several master perfumers before
-                developing her distinctive style that balances tradition with
-                innovation.
+                Meet Joseph Cagara, the visionary behind Aroma Scentique. His
+                fascination with scents began early — captivated by how a single
+                fragrance could express emotion and confidence. Realizing that
+                premium perfumes were often out of reach for many, he set out to
+                redefine what luxury means.
               </p>
 
               {/* Quote Card */}
@@ -57,16 +56,15 @@ const MeetFounderSection = () => {
                     className="text-base font-inter italic leading-relaxed mb-3"
                     style={{ color: colors.primary }}
                   >
-                    &ldquo;I believe that fragrance is one of the most powerful
-                    forms of self-expression. A signature scent becomes part of
-                    your identity, creating an invisible aura that leaves an
-                    impression long after you&apos;ve left a room.&rdquo;
+                    “I wanted to create perfumes that rival high-end brands in
+                    quality but remain affordable — scents that make people feel
+                    confident, elegant, and empowered every day.”
                   </p>
                   <p
                     className="text-sm font-montserrat font-semibold"
                     style={{ color: colors.goldDark }}
                   >
-                    — Claire Laurent, Founder
+                    — Josepch Cagara, Founder
                   </p>
                 </CardContent>
               </Card>
@@ -75,12 +73,9 @@ const MeetFounderSection = () => {
                 className="text-base font-inter leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                Claire continues to personally oversee the creation of each new
-                fragrance, ensuring that every Aroma Scentique perfume meets her
-                exacting standards and embodies the brand&apos;s commitment to
-                artistry and quality. Her unique approach combines scientific
-                precision with artistic intuition, resulting in compositions
-                that are both technically perfect and emotionally evocative.
+                Today, Joseph continues to lead Aroma Scentique with passion and
+                purpose, proving that true luxury is not about price, but about
+                how it makes you feel.
               </p>
             </div>
           </div>

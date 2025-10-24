@@ -11,8 +11,7 @@ const VisionMissionSection = () => {
       id: 1,
       icon: Lightbulb,
       title: "Innovation",
-      description:
-        "Pushing boundaries while respecting traditional perfumery techniques.",
+      description: "Blending creativity with timeless perfumery techniques.",
     },
     {
       id: 2,
@@ -25,7 +24,7 @@ const VisionMissionSection = () => {
       id: 3,
       icon: Target,
       title: "Excellence",
-      description: "Uncompromising quality in every aspect of our creations.",
+      description: "Upholding uncompromised quality in every detail.",
     },
     {
       id: 4,
@@ -109,12 +108,9 @@ const VisionMissionSection = () => {
                 className="text-base font-inter leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                To be recognized globally as the premier boutique perfume house
-                that elevates fragrance to an art form, inspiring people to
-                express their individuality and create lasting memories through
-                scent. We envision a world where every person discovers their
-                perfect fragrance that becomes an integral part of their
-                identity.
+                To be a trusted Filipino perfume brand that inspires confidence
+                and individuality through scent — proving that quality fragrance
+                can be both luxurious and accessible.
               </p>
             </CardContent>
           </Card>
@@ -142,11 +138,10 @@ const VisionMissionSection = () => {
                 className="text-base font-inter leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                To create exceptional, artisanal fragrances that evoke emotions
-                and tell stories, using only the finest ingredients sourced
-                ethically from around the world. We are committed to maintaining
-                the highest standards of quality while preserving traditional
-                perfumery techniques and embracing sustainable practices.
+                To craft high-quality, handcrafted perfumes that evoke emotion
+                and tell stories. We’re dedicated to making premium scents
+                affordable while maintaining artistry, authenticity, and
+                sustainability.
               </p>
             </CardContent>
           </Card>

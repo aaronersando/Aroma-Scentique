@@ -8,48 +8,57 @@ const OurJourneySection = () => {
   const journeyMilestones = [
     {
       id: 1,
-      year: "2010",
+      year: "2024",
       title: "The Beginning",
       description:
-        "Claire Laurent establishes Aroma Scentique in a small Parisian atelier, launching the first collection of three signature scents. Her vision was to create fragrances that tell stories, evoke emotions, and transport the wearer to different times and places.",
+        "Aroma Scentique was founded with a dream to create handcrafted perfumes that blend premium quality with affordability. Starting from small batches, we aimed to make every scent a reflection of confidence and individuality.",
       image:
-        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1611934180042-da791b4091e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJlZ2lubmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=1000",
     },
     {
       id: 2,
-      year: "2013",
-      title: "International Recognition",
+      year: "2024",
+      title: "First Collection Launch",
       description:
-        "Our signature scent 'Rose Velvet' wins the prestigious FiFi Award, bringing international recognition to the brand. This accolade solidified our reputation in the fragrance industry and opened doors to new markets and collaborations with renowned artisans and designers.",
+        "After months of testing and refining, our first signature collection was born — each scent designed to evoke emotion and self-expression for every personality.",
       image:
-        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1647951681118-f89d0eef3a1f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zmlyc3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
     },
     {
       id: 3,
-      year: "2016",
-      title: "Expansion",
+      year: "2024",
+      title: "Building Our Brand",
       description:
-        "Aroma Scentique opens its flagship boutique in the heart of Paris, featuring an in-store perfume laboratory where customers can witness the creation process. This innovative approach to retail allowed clients to experience the art of perfumery firsthand and even participate in custom scent creation workshops led by our master perfumers.",
+        "Through social media and pop-up sales, Aroma Scentique found its growing community. Every review and purchase inspired us to keep perfecting our craft.",
       image:
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1517768692594-b4295586b7d6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVpbGR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
     },
     {
       id: 4,
-      year: "2019",
-      title: "Sustainability Initiative",
+      year: "2025",
+      title: "Growing Locally",
       description:
-        "Launch of our sustainability initiative, committing to ethical sourcing, eco-friendly packaging, and supporting communities where our ingredients are grown. We established direct partnerships with farmers in regions known for their exceptional botanical ingredients, ensuring fair compensation and sustainable cultivation practices while preserving traditional harvesting methods.",
+        "With more customers discovering our scents, we expanded through online sales and local retail partners, bringing artisanal perfumes closer to every Filipino.",
       image:
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1598258710957-db8614c2881e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuaWxhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000",
     },
     {
       id: 5,
-      year: "2022",
-      title: "Global Presence",
+      year: "2025",
+      title: "Crafting Our Identity",
       description:
-        "Expansion to 15 countries worldwide with boutiques in major fashion capitals including New York, London, Milan, Tokyo, and Dubai. Our global presence allows us to share our artisanal approach to perfumery with fragrance enthusiasts around the world while maintaining our commitment to quality and authenticity.",
+        "We focused on improving quality, sustainability, and our brand identity — staying true to our mission of creating scents that represent authenticity and emotion.",
       image:
-        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1628927124199-a8a2a5394392?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3JhZnRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1000",
+    },
+    {
+      id: 6,
+      year: "2025",
+      title: "Looking Ahead",
+      description:
+        "As we continue to grow, we aim to expand our collection and offer customizable fragrances — sharing the art of affordable luxury with more people nationwide.",
+      image:
+        "https://images.unsplash.com/photo-1528368250370-51fa780d345b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9va2luZyUyMGFoZWFkfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000",
     },
   ];
 
@@ -70,9 +79,9 @@ const OurJourneySection = () => {
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            From our humble beginnings to international recognition, our journey
-            has been defined by passion, craftsmanship, and a commitment to
-            excellence.
+            Aroma Scentique’s story is still unfolding. From humble beginnings
+            in 2024 to steady growth in 2025, every step has been guided by
+            passion, creativity, and community.
           </p>
         </div>
 

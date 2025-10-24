@@ -36,21 +36,19 @@ const OurStorySection = () => {
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Aroma Scentique was born from a passion for creating unique,
-                  artisanal fragrances that tell a story and evoke emotions. Our
-                  journey began in a small Parisian atelier and has grown into a
-                  boutique perfume house known for exceptional quality and
-                  artistic expression.
+                  Aroma Scentique started as a small passion project with one
+                  simple vision — to make high-quality, handcrafted perfumes
+                  accessible to everyone. What began with curiosity and
+                  creativity has grown into a local brand dedicated to crafting
+                  scents that express individuality and emotion.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Each fragrance we create is a work of art, carefully composed
-                  to capture the essence of precious moments and transport you
-                  to different times and places. We believe that perfume is more
-                  than just a scent—it&apos;s an invisible signature that
-                  becomes part of your identity.
+                  Each fragrance is thoughtfully blended to capture confidence,
+                  elegance, and everyday inspiration — because we believe
+                  perfume isn’t just a scent, it’s your personal statement.
                 </p>
               </div>
             </div>

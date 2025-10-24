@@ -49,23 +49,17 @@ const TheBeginningSection = () => {
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Founded in 2010 by master perfumer Claire Laurent, Aroma
-                  Scentique began as a small passion project in a quaint
-                  Parisian workshop. Claire, having trained under some of the
-                  most renowned noses in the industry, wanted to create
-                  fragrances that weren&apos;t bound by commercial constraints
-                  but instead focused on artistry and emotion.
+                  We founded Aroma Scentique to bridge the gap between luxury
+                  and affordability. Many people deserve to experience
+                  sophistication through scent — without breaking the bank.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  The first collection, featuring just three signature scents,
-                  quickly gained recognition for its unique compositions and
-                  exceptional quality. What started as a limited production sold
-                  in select boutiques has now grown into an internationally
-                  recognized brand, while still maintaining the artisanal
-                  approach and attention to detail that defined our beginnings.
+                  Each fragrance we create is made with care, precision, and
+                  passion. For us, true luxury isn’t defined by price, but by
+                  craftsmanship and how a scent makes you feel.
                 </p>
               </div>
             </div>
