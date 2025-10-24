@@ -98,16 +98,17 @@ const ContactDetailsSection = () => {
                 className="text-base font-inter mb-6 leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                Experience our fragrances in person at our flagship boutique in
-                New York. Our knowledgeable staff will guide you through our
-                collections and help you find your perfect scent.
+                Discover our handcrafted perfumes inspired by world-class
+                fragrances. Experience them in person through meetups or local
+                pop-ups, where we’ll help you find the scent that truly defines
+                you.
               </p>
               <p
                 className="text-base font-inter mb-4 leading-relaxed"
                 style={{ color: colors.foreground }}
               >
-                For meetups, collaborations, or custom scent requests, feel free
-                to reach out — we’d love to connect!
+                For collaborations, custom scent requests, or upcoming events,
+                feel free to reach out — we’d love to connect!
               </p>
               <div className="mt-6">
                 <h4
@@ -124,7 +125,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Personalized scent recommendations
+                    Personalized scent matching and recommendations
                   </li>
                   <li
                     className="text-sm font-inter flex items-start"
@@ -133,7 +134,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Custom scent requests (limited availability)
+                    Custom perfume blends (limited availability)
                   </li>
                   <li
                     className="text-sm font-inter flex items-start"
@@ -142,7 +143,7 @@ const ContactDetailsSection = () => {
                     <span className="mr-2" style={{ color: colors.goldDark }}>
                       •
                     </span>
-                    Pop-up event sampling and collaborations
+                    Pop-up sampling events and brand collaborations
                   </li>
                 </ul>
               </div>

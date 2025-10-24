@@ -26,18 +26,16 @@ const ContactHeroSection = () => {
             className="text-base md:text-lg font-inter mb-6 leading-relaxed"
             style={{ color: colors.primary }}
           >
-            We’d love to hear from you! Whether you have questions about our
-            perfumes, need help with an order, or want to explore reselling or
-            collaboration opportunities, our small but dedicated team is ready
-            to assist.
+            We’d love to hear from you! Whether you’re curious about our scents,
+            need help with your order, or want to collaborate, our small yet
+            passionate team is always ready to assist.
           </p>
           <p
             className="text-base md:text-lg font-inter leading-relaxed"
             style={{ color: colors.primary }}
           >
-            At Aroma Scentique, we value personal connection and aim to give
-            every customer the same care and attention we put into our
-            fragrances.
+            At Aroma Scentique, every message matters — we give each customer
+            the same care and attention we pour into every bottle of perfume.
           </p>
         </div>
       </div>
