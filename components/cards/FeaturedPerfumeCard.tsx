@@ -12,7 +12,7 @@ interface FeaturedPerfumeCardProps {
   description: string;
   featured?: boolean;
   bestSeller?: boolean;
-  href?: string;
+  href: string;
 }
 
 const FeaturedPerfumeCard: React.FC<FeaturedPerfumeCardProps> = ({
@@ -22,11 +22,11 @@ const FeaturedPerfumeCard: React.FC<FeaturedPerfumeCardProps> = ({
   description,
   featured = false,
   bestSeller = false,
-  href = "#",
+  href,
 }) => {
   return (
     <Card
-      className="overflow-hidden transition-all duration-300 hover:shadow-lg border"
+      className="group overflow-hidden transition-all duration-300 hover:shadow-2xl border-2"
       style={{
         backgroundColor: colors.card,
         borderColor: colors.border,
@@ -39,48 +39,57 @@ const FeaturedPerfumeCard: React.FC<FeaturedPerfumeCardProps> = ({
               src={image}
               alt={title}
               fill
-              className="object-cover transition-transform duration-300 hover:scale-105"
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute top-4 left-4 flex gap-2">
-              {featured && (
-                <Badge
-                  className="font-montserrat text-xs uppercase"
-                  style={{
-                    backgroundColor: colors.brown,
-                    color: colors.primaryForeground,
-                  }}
-                >
-                  Featured
-                </Badge>
-              )}
-              {bestSeller && (
-                <Badge
-                  className="font-montserrat text-xs uppercase"
-                  style={{
-                    backgroundColor: colors.gold,
-                    color: colors.primary,
-                  }}
-                >
-                  Best Seller
-                </Badge>
-              )}
-            </div>
+            {(featured || bestSeller) && (
+              <div className="absolute top-4 right-4 flex flex-col gap-2">
+                {featured && (
+                  <Badge
+                    className="font-montserrat text-xs px-2 py-1"
+                    style={{
+                      backgroundColor: colors.gold,
+                      color: colors.primary,
+                    }}
+                  >
+                    Featured
+                  </Badge>
+                )}
+                {bestSeller && (
+                  <Badge
+                    className="font-montserrat text-xs px-2 py-1"
+                    style={{
+                      backgroundColor: colors.brown,
+                      color: colors.primaryForeground,
+                    }}
+                  >
+                    Best Seller
+                  </Badge>
+                )}
+              </div>
+            )}
           </div>
-          <div className="p-6">
-            <p
-              className="text-xs font-montserrat uppercase tracking-wider mb-2"
-              style={{ color: colors.muted }}
+
+          <div className="p-6 space-y-3">
+            <Badge
+              variant="secondary"
+              className="font-montserrat uppercase tracking-wider text-xs"
+              style={{
+                backgroundColor: colors.goldLight,
+                color: colors.goldDark,
+              }}
             >
               {category}
-            </p>
+            </Badge>
+
             <h3
-              className="text-xl font-playfair font-bold mb-2"
+              className="text-2xl font-playfair font-bold line-clamp-1"
               style={{ color: colors.primary }}
             >
               {title}
             </h3>
+
             <p
-              className="text-sm font-inter leading-relaxed"
+              className="text-sm font-inter line-clamp-2 leading-relaxed"
               style={{ color: colors.mutedForeground }}
             >
               {description}

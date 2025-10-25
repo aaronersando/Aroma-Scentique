@@ -32,47 +32,55 @@ const ProductCard: React.FC<Product> = ({
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="absolute top-4 left-4 flex flex-col gap-2">
-              {featured && (
-                <Badge
-                  className="font-montserrat text-xs uppercase shadow-lg"
-                  style={{
-                    backgroundColor: colors.brown,
-                    color: colors.primaryForeground,
-                  }}
-                >
-                  Featured
-                </Badge>
-              )}
-              {bestSeller && (
-                <Badge
-                  className="font-montserrat text-xs uppercase shadow-lg"
-                  style={{
-                    backgroundColor: colors.gold,
-                    color: colors.primary,
-                  }}
-                >
-                  Best Seller
-                </Badge>
-              )}
-            </div>
+            {(featured || bestSeller) && (
+              <div className="absolute top-4 right-4 flex flex-col gap-2">
+                {featured && (
+                  <Badge
+                    className="font-montserrat text-xs px-2 py-1"
+                    style={{
+                      backgroundColor: colors.gold,
+                      color: colors.primary,
+                    }}
+                  >
+                    Featured
+                  </Badge>
+                )}
+                {bestSeller && (
+                  <Badge
+                    className="font-montserrat text-xs px-2 py-1"
+                    style={{
+                      backgroundColor: colors.brown,
+                      color: colors.primaryForeground,
+                    }}
+                  >
+                    Best Seller
+                  </Badge>
+                )}
+              </div>
+            )}
           </div>
-          <div className="p-6">
-            <p
-              className="text-xs font-montserrat uppercase tracking-wider mb-2"
-              style={{ color: colors.muted }}
+
+          <div className="p-6 space-y-3">
+            <Badge
+              variant="secondary"
+              className="font-montserrat uppercase tracking-wider text-xs"
+              style={{
+                backgroundColor: colors.goldLight,
+                color: colors.goldDark,
+              }}
             >
               {category}
-            </p>
+            </Badge>
+
             <h3
-              className="text-xl font-playfair font-bold mb-3 group-hover:text-opacity-80 transition-all"
+              className="text-2xl font-playfair font-bold line-clamp-1"
               style={{ color: colors.primary }}
             >
               {name}
             </h3>
+
             <p
-              className="text-sm font-inter leading-relaxed line-clamp-3"
+              className="text-sm font-inter line-clamp-2 leading-relaxed"
               style={{ color: colors.mutedForeground }}
             >
               {description}
