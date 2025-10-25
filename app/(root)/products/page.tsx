@@ -16,7 +16,7 @@ const Page = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortBy, setSortBy] = useState("featured");
+  const [sortBy, setSortBy] = useState("name-asc");
   const [showFilters, setShowFilters] = useState(false);
   const [showSortDropdown, setShowSortDropdown] = useState(false);
 
@@ -44,23 +44,11 @@ const Page = () => {
       );
     }
 
-    // Sort products
+    // Sort products - only by name
     if (sortBy === "name-asc") {
       filtered.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortBy === "name-desc") {
       filtered.sort((a, b) => b.name.localeCompare(a.name));
-    } else if (sortBy === "bestsellers") {
-      filtered.sort((a, b) => {
-        if (a.bestSeller && !b.bestSeller) return -1;
-        if (!a.bestSeller && b.bestSeller) return 1;
-        return 0;
-      });
-    } else if (sortBy === "featured") {
-      filtered.sort((a, b) => {
-        if (a.featured && !b.featured) return -1;
-        if (!a.featured && b.featured) return 1;
-        return 0;
-      });
     }
 
     return filtered;
@@ -68,16 +56,12 @@ const Page = () => {
 
   const getSortLabel = () => {
     switch (sortBy) {
-      case "featured":
-        return "Featured";
       case "name-asc":
         return "Name: A-Z";
       case "name-desc":
         return "Name: Z-A";
-      case "bestsellers":
-        return "Best Sellers";
       default:
-        return "Featured";
+        return "Name: A-Z";
     }
   };
 

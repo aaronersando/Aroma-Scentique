@@ -11,10 +11,8 @@ interface ProductSortProps {
 
 const ProductSort: React.FC<ProductSortProps> = ({ sortBy, onSortChange }) => {
   const sortOptions = [
-    { value: "featured", label: "Featured" },
     { value: "name-asc", label: "Name: A-Z" },
     { value: "name-desc", label: "Name: Z-A" },
-    { value: "bestsellers", label: "Best Sellers" },
   ];
 
   return (
