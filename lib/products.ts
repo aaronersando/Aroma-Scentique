@@ -28,6 +28,7 @@ export const products: Product[] = [
       "Fresh and invigorating with mint, aldehydes, and seaweed. Perfect for active men who crave a clean, sporty scent.",
     image:
       "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&h=800&fit=crop",
+    featured: true,
   },
   {
     id: "aqua-bulgari",
@@ -37,7 +38,6 @@ export const products: Product[] = [
       "A refined aquatic fragrance with mandarin, petitgrain, and mineral amber. Evokes the freshness of the ocean with elegant depth.",
     image:
       "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&h=800&fit=crop",
-    featured: true,
   },
   {
     id: "lacoste-red",
@@ -56,7 +56,6 @@ export const products: Product[] = [
       "Seductive and passionate, combining mint, green apple, and tonka bean. A fragrance that celebrates desire and strength.",
     image:
       "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=800&h=800&fit=crop",
-    featured: true,
   },
   {
     id: "acqua-di-gio",
@@ -75,6 +74,7 @@ export const products: Product[] = [
       "Sophisticated citrus and woods with notes of grapefruit, cardamom, and musk. A refined scent for the modern gentleman.",
     image:
       "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=800&h=800&fit=crop",
+    featured: true,
     bestSeller: true,
   },
   {
@@ -85,6 +85,7 @@ export const products: Product[] = [
       "Smooth and mysterious, blending lavender, patchouli, and sandalwood. Perfect for evening wear and confident style.",
     image:
       "https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=800&h=800&fit=crop",
+    featured: true,
     bestSeller: true,
   },
   {
@@ -104,7 +105,6 @@ export const products: Product[] = [
       "Raw yet refined — featuring bergamot, pepper, and ambroxan. A statement of modern masculinity and wilderness.",
     image:
       "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&h=800&fit=crop",
-    featured: true,
   },
 
   // WOMEN'S FRAGRANCES
@@ -135,7 +135,6 @@ export const products: Product[] = [
       "Romantic and elegant, featuring rose, bergamot, and patchouli. A timeless symbol of femininity and grace.",
     image:
       "https://images.unsplash.com/photo-1588405748880-12d1d2a59d75?w=800&h=800&fit=crop",
-    featured: true,
   },
   {
     id: "pure-seduction",
@@ -172,6 +171,7 @@ export const products: Product[] = [
       "Cool cucumber and sweet melon create a refreshing, light scent. Crisp and uplifting — perfect for daily wear.",
     image:
       "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=800&h=800&fit=crop",
+    featured: true,
   },
   {
     id: "rush",
@@ -208,7 +208,6 @@ export const products: Product[] = [
       "Elegant and mysterious, featuring blackcurrant, rose, and musk. A luxurious fragrance with depth and sophistication.",
     image:
       "https://images.unsplash.com/photo-1587556930307-caa4f86e6306?w=800&h=800&fit=crop",
-    featured: true,
   },
   {
     id: "vanilla-lace",
@@ -218,6 +217,7 @@ export const products: Product[] = [
       "Warm and sensual vanilla with soft musk undertones. Cozy, comforting, and endlessly alluring.",
     image:
       "https://images.unsplash.com/photo-1595535375613-a94f3fb6dc4e?w=800&h=800&fit=crop",
+    featured: true,
   },
   {
     id: "cloud",
@@ -237,6 +237,7 @@ export const products: Product[] = [
       "Addictive and bold — coffee, vanilla, and white flowers merge for ultimate sensuality.",
     image:
       "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=800&h=800&fit=crop",
+    featured: true,
     bestSeller: true,
   },
   {
@@ -247,7 +248,6 @@ export const products: Product[] = [
       "Exquisite and luminous, featuring saffron, amberwood, and jasmine. A luxurious blend that leaves a lasting, unforgettable trail.",
     image:
       "https://images.unsplash.com/photo-1616628188599-3b3a2e6c9406?w=800&h=800&fit=crop",
-    featured: true,
   },
   {
     id: "eclat",
