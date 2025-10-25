@@ -3,7 +3,7 @@
 import React from "react";
 import { colors } from "@/lib/colors";
 
-const ContactHeroSection = () => {
+const AboutHeroSection = () => {
   return (
     <section
       className="py-16 md:py-20"
@@ -14,19 +14,18 @@ const ContactHeroSection = () => {
           className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6"
           style={{ color: colors.primary }}
         >
-          Contact <span style={{ color: colors.goldDark }}>Us</span>
+          About <span style={{ color: colors.goldDark }}>Us</span>
         </h1>
         <p
           className="text-base md:text-lg font-inter max-w-3xl mx-auto leading-relaxed"
           style={{ color: colors.mutedForeground }}
         >
-          We&apos;d love to hear from you! Whether you&apos;re curious about our
-          scents, need help with your order, or want to collaborate, our
-          passionate team is here to assist.
+          Discover the story behind Aroma Scentique, our journey, founder, and
+          commitment to creating exceptional artisanal fragrances.
         </p>
       </div>
     </section>
   );
 };
 
-export default ContactHeroSection;
+export default AboutHeroSection;

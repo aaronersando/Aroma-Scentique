@@ -38,7 +38,7 @@ const VisionMissionSection = () => {
   return (
     <section
       className="py-16 md:py-24"
-      style={{ backgroundColor: colors.background }}
+      style={{ backgroundColor: colors.secondary }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Core Values */}

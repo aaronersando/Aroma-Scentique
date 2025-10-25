@@ -1,4 +1,5 @@
 import React from "react";
+import AboutHeroSection from "@/components/sections/about/AboutHeroSection";
 import OurStorySection from "@/components/sections/about/OurStorySection";
 import TheBeginningSection from "@/components/sections/about/TheBeginningSection";
 import OurJourneySection from "@/components/sections/about/OurJourneySection";
@@ -15,6 +16,7 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <>
+      <AboutHeroSection />
       <OurStorySection />
       <TheBeginningSection />
       <OurJourneySection />

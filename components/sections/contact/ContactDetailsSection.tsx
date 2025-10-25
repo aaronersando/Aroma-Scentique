@@ -45,7 +45,7 @@ const ContactDetailsSection = () => {
   return (
     <section
       className="py-16 md:py-24"
-      style={{ backgroundColor: colors.secondary }}
+      style={{ backgroundColor: colors.background }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Contact Info Cards */}
