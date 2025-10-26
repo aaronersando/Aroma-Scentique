@@ -1,18 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Subscribed:", email);
-    setEmail("");
-  };
-
   return (
     <footer className="bg-[#DDD5CE] border-t border-[#C2B8AE]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -28,8 +20,8 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-[#5C5049] text-sm mb-6 font-inter leading-relaxed">
-              Inspired by the world’s most captivating perfumes, Aroma Scentique
-              brings you artisanal scents that tell a story.
+              Inspired by the world&apos;s most captivating perfumes, Aroma
+              Scentique brings you artisanal scents that tell a story.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-4">
@@ -115,7 +107,7 @@ const Footer = () => {
                   href="/products?category=men"
                   className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
                 >
-                  Men
+                  Men&apos;s Fragrances
                 </Link>
               </li>
               <li>
@@ -123,40 +115,85 @@ const Footer = () => {
                   href="/products?category=women"
                   className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
                 >
-                  Women
+                  Women&apos;s Fragrances
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products"
+                  className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
+                >
+                  New Arrivals
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products"
+                  className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
+                >
+                  Best Sellers
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Customer Service */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <h3 className="text-[#4A3426] font-playfair text-lg font-semibold mb-4">
-              Newsletter
+              Customer Service
             </h3>
-            <p className="text-[#5C5049] text-sm mb-4 font-inter leading-relaxed">
-              Subscribe to our newsletter for the latest updates and exclusive
-              offers.
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact#faq"
+                  className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:aromascentiqueph@gmail.com"
+                  className="text-[#5C5049] text-sm font-inter hover:text-[#3D2E24] transition-colors"
+                >
+                  Email Support
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Product Disclaimer Section */}
+        <div className="mb-8">
+          <div className="bg-[#C2B8AE] bg-opacity-30 rounded-lg p-6 border border-[#A68A5E]">
+            <h3 className="text-[#4A3426] font-playfair text-lg font-semibold mb-3">
+              Important Notice
+            </h3>
+            <p className="text-[#5C5049] text-sm font-inter leading-relaxed mb-2">
+              <strong className="text-[#3D2E24]">Disclaimer:</strong> Aroma
+              Scentique perfumes are inspired by popular designer fragrances but
+              are not affiliated with, manufactured by, or sold by the original
+              brand owners. Our products are handcrafted interpretations created
+              with high-quality ingredients and are available exclusively in{" "}
+              <span className="font-semibold text-[#3D2E24]">
+                10ml and 50ml
+              </span>{" "}
+              bottles.
             </p>
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-2"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                required
-                className="flex-1 px-4 py-2.5 bg-white border border-[#C2B8AE] text-[#3D2E24] text-sm font-inter placeholder:text-[#75695E] focus:outline-none focus:border-[#4A3426] transition-colors rounded-xl"
-              />
-              <button
-                type="submit"
-                className="px-6 py-2.5 bg-[#6B4A2F] text-[#FAF8F6] font-montserrat text-sm font-medium hover:bg-[#4D3321] transition-colors whitespace-nowrap rounded-xl"
-              >
-                Subscribe
-              </button>
-            </form>
+            <p className="text-[#5C5049] text-sm font-inter leading-relaxed">
+              We take pride in crafting affordable, artisanal fragrances that
+              capture the essence of luxury while remaining accessible to
+              everyone. All trademarks and brand names mentioned belong to their
+              respective owners.
+            </p>
           </div>
         </div>
 

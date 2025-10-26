@@ -17,7 +17,7 @@ const FAQSection = () => {
       id: 2,
       question: "Can I return or exchange my order?",
       answer:
-        "We accept returns or replacements for damaged or defective products within 7 days of delivery. Due to hygiene reasons, opened perfumes cannot be returned unless there’s an issue with the product.",
+        "We accept returns or replacements for damaged or defective products within 7 days of delivery. Due to hygiene reasons, opened perfumes cannot be returned unless there's an issue with the product.",
     },
     {
       id: 3,
@@ -71,16 +71,22 @@ const FAQSection = () => {
             Don&apos;t see your question here? Our customer service team is
             ready to assist you with any inquiries.
           </p>
-          <Button
-            size="lg"
-            className="font-montserrat uppercase tracking-wide text-sm px-8 py-6 rounded-md hover:opacity-90 transition-opacity"
-            style={{
-              backgroundColor: colors.brown,
-              color: colors.primaryForeground,
-            }}
+          <a
+            href="mailto:aromascentiqueph@gmail.com?subject=Customer%20Service%20Inquiry"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Email Customer Service
-          </Button>
+            <Button
+              size="lg"
+              className="font-montserrat uppercase tracking-wide text-sm px-8 py-6 rounded-md hover:opacity-90 transition-opacity"
+              style={{
+                backgroundColor: colors.brown,
+                color: colors.primaryForeground,
+              }}
+            >
+              Email Customer Service
+            </Button>
+          </a>
         </div>
       </div>
     </section>

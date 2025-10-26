@@ -28,8 +28,8 @@ const ProductDetailsSection: React.FC<ProductDetailsSectionProps> = ({
   const [copied, setCopied] = useState(false);
 
   const sizes = [
-    { label: "25ml", price: "₱50" },
-    { label: "50ml", price: "₱100" },
+    { label: "10ml", price: "₱50" },
+    { label: "50ml", price: "₱300" },
   ];
 
   const handleShare = async () => {
