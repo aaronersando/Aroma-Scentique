@@ -12,7 +12,7 @@ const HeroSection = () => {
       {/* Background Image - Full Section */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=1920&h=1080&fit=crop"
+          src="/Pic-20251026T075228Z-1-001/Pic/Women_s/YSLLibre_2.jpg"
           alt="Hero background"
           fill
           className="object-cover"

@@ -16,8 +16,8 @@ const TheBeginningSection = () => {
           <div>
             <div className="relative aspect-4/3 overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&h=600&fit=crop"
-                alt="The Beginning"
+                src="/Pic-20251026T075228Z-1-001/Pic/Men_s/LacosteBlack_2.jpg"
+                alt="The Beginning - Crafting perfumes"
                 fill
                 className="object-cover"
               />
@@ -30,38 +30,34 @@ const TheBeginningSection = () => {
               className="p-8 md:p-12 rounded-2xl"
               style={{
                 backgroundColor: colors.card,
-                border: `2px solid ${colors.gold}`,
               }}
             >
-              <div
-                className="w-20 h-1 mb-6"
-                style={{ backgroundColor: colors.gold }}
-              />
               <h2
                 className="text-4xl md:text-5xl font-playfair font-bold mb-6"
                 style={{ color: colors.primary }}
               >
-                The Beginning of{" "}
-                <span style={{ color: colors.goldDark }}>Aroma Scentique</span>
+                The <span style={{ color: colors.goldDark }}>Beginning</span>
               </h2>
               <div className="space-y-4">
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  We noticed how luxury perfumes often came with prices that few
-                  could afford. So, we set out to change that. Aroma Scentique
-                  crafts artisanal perfumes that deliver the same
-                  sophistication, longevity, and richness found in designer
-                  fragrances — but at an honest, affordable price.
+                  It all started with a simple idea: to create perfumes that
+                  capture the essence of luxury without the luxury price tag.
+                  Inspired by world-class scents, I began experimenting with
+                  premium oils and fragrance formulations in small batches —
+                  learning through trial, passion, and persistence.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
-                  Every scent is created with care and passion, proving that
-                  true luxury isn’t about the label, but the quality and emotion
-                  behind it.
+                  What began as a personal hobby quickly grew into something
+                  bigger. Friends and family loved the scents, and soon, word
+                  spread. That&apos;s when I realized this wasn&apos;t just
+                  about making perfume — it was about crafting experiences and
+                  giving people confidence through fragrance.
                 </p>
               </div>
             </div>

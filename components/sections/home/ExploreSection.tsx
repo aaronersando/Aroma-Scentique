@@ -8,8 +8,7 @@ const ExploreSection = () => {
   const collections = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=1200&h=900&fit=crop",
+      image: "/Pic-20251026T075228Z-1-001/Pic/Men_s/Invictus_1.jpg",
       title: "MEN",
       description:
         "Rich, modern, and long-lasting scents inspired by iconic masculine fragrances — perfect for daily wear or special occasions.",
@@ -17,8 +16,7 @@ const ExploreSection = () => {
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?w=1200&h=900&fit=crop",
+      image: "/Pic-20251026T075228Z-1-001/Pic/Women_s/BlackOpium_1.jpg",
       title: "WOMEN",
       description:
         "Elegant, alluring, and timeless perfumes inspired by world-renowned feminine fragrances — made to captivate and empower",
@@ -37,19 +35,27 @@ const ExploreSection = () => {
             className="text-4xl md:text-5xl font-playfair font-bold mb-4"
             style={{ color: colors.primary }}
           >
-            Explore <span style={{ color: colors.goldDark }}>Collections</span>
+            Explore Our{" "}
+            <span style={{ color: colors.goldDark }}>Collections</span>
           </h2>
           <p
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            Browse our inspired collections and find the scent that truly
-            defines you.
+            From bold and confident to soft and elegant — discover perfumes
+            crafted for every personality and occasion.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {collections.map((collection) => (
-            <CollectionCard key={collection.id} {...collection} />
+            <CollectionCard
+              key={collection.id}
+              image={collection.image}
+              title={collection.title}
+              description={collection.description}
+              href={collection.href}
+            />
           ))}
         </div>
       </div>

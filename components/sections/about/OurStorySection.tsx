@@ -7,29 +7,19 @@ import { colors } from "@/lib/colors";
 const OurStorySection = () => {
   return (
     <section
-      className="py-16 md:py-24"
+      className="py-20 md:py-28"
       style={{ backgroundColor: colors.background }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="order-2 lg:order-1">
-            <div
-              className="p-8 md:p-12 rounded-2xl border-2"
-              style={{
-                backgroundColor: colors.card,
-                borderColor: colors.gold,
-              }}
-            >
-              <div
-                className="w-20 h-1 mb-6"
-                style={{ backgroundColor: colors.gold }}
-              />
+            <div className="space-y-6">
               <h2
-                className="text-4xl md:text-5xl font-playfair font-bold mb-6"
+                className="text-4xl md:text-5xl font-playfair font-bold"
                 style={{ color: colors.primary }}
               >
-                Our Story
+                Our <span style={{ color: colors.goldDark }}>Story</span>
               </h2>
               <div className="space-y-4">
                 <p
@@ -49,8 +39,8 @@ const OurStorySection = () => {
                 >
                   Each perfume is thoughtfully blended to capture confidence,
                   elegance, and self-expression. At Aroma Scentique, we believe
-                  perfume isn’t just about smelling good — it’s about expressing
-                  who you are.
+                  perfume isn&apos;t just about smelling good — it&apos;s about
+                  expressing who you are.
                 </p>
               </div>
             </div>
@@ -60,7 +50,7 @@ const OurStorySection = () => {
           <div className="order-1 lg:order-2">
             <div className="relative aspect-4/3 overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&h=600&fit=crop"
+                src="/Pic-20251026T075228Z-1-001/Pic/Women_s/YSLLibre_2.jpg"
                 alt="Our Story"
                 fill
                 className="object-cover"

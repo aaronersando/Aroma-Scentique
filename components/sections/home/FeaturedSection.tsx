@@ -11,7 +11,7 @@ const FeaturedSection = () => {
 
   // Select 4 featured products: 2 men's and 2 women's
   const selectedFeatured = [
-    featuredProducts.find((p) => p.id === "bulgari-extreme"),
+    featuredProducts.find((p) => p.id === "bvlgari-extreme"), // Fixed: was "bulgari-extreme"
     featuredProducts.find((p) => p.id === "lacoste-black"),
     featuredProducts.find((p) => p.id === "ysl-libre"),
     featuredProducts.find((p) => p.id === "black-opium"),

@@ -1,29 +1,24 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { colors } from "@/lib/colors";
 
 const TheArtSection = () => {
   return (
     <section
       className="py-16 md:py-24"
-      style={{ backgroundColor: colors.secondary }}
+      style={{ backgroundColor: colors.background }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left Side - Text Content (Same background as section) */}
+          {/* Left Side - Text Content */}
           <div className="lg:col-span-5 xl:col-span-5">
-            <div
-              className="p-8 md:p-10 lg:p-12 rounded-2xl"
-              style={{
-                backgroundColor: colors.secondary,
-              }}
-            >
+            <div className="space-y-8">
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-6 leading-tight"
+                className="text-4xl md:text-5xl font-playfair font-bold"
                 style={{ color: colors.primary }}
               >
                 The Art of{" "}
@@ -35,9 +30,9 @@ const TheArtSection = () => {
                   style={{ color: colors.foreground }}
                 >
                   At Aroma Scentique, we see fragrance as more than just a scent
-                  — it’s an art form. Every bottle is carefully handcrafted,
-                  inspired by luxury designer perfumes, and made with premium
-                  local oils and long-lasting formulations.
+                  — it&apos;s an art form. Every bottle is carefully
+                  handcrafted, inspired by luxury designer perfumes, and made
+                  with premium local oils and long-lasting formulations.
                 </p>
                 <p
                   className="text-base font-inter leading-relaxed"
@@ -72,7 +67,7 @@ const TheArtSection = () => {
               <div className="col-span-7 row-span-2">
                 <div className="relative aspect-3/4 w-full overflow-hidden rounded-2xl shadow-xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&h=1000&fit=crop"
+                    src="/Pic-20251026T075228Z-1-001/Pic/Women_s/MissDior_2.jpg"
                     alt="Main perfume bottle"
                     fill
                     className="object-cover"
@@ -84,8 +79,8 @@ const TheArtSection = () => {
               <div className="col-span-5">
                 <div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
                   <Image
-                    src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=600&h=600&fit=crop"
-                    alt="Small perfume bottle with red flowers"
+                    src="/Pic-20251026T075228Z-1-001/Pic/Men_s/Sauvage_2.jpg"
+                    alt="Small perfume bottle"
                     fill
                     className="object-cover"
                   />
@@ -96,7 +91,7 @@ const TheArtSection = () => {
               <div className="col-span-5">
                 <div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-lg">
                   <Image
-                    src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=600&fit=crop"
+                    src="/Pic-20251026T075228Z-1-001/Pic/Women_s/BrightCrystal_2.jpg"
                     alt="Small perfume bottle with white flowers"
                     fill
                     className="object-cover"
