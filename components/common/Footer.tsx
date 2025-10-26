@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -26,16 +26,7 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <Link
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#3D2E24] hover:text-[#4A3426] transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} strokeWidth={1.5} />
-              </Link>
-              <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/19nQfuAtBG/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#3D2E24] hover:text-[#4A3426] transition-colors"
@@ -44,13 +35,22 @@ const Footer = () => {
                 <Facebook size={20} strokeWidth={1.5} />
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://www.instagram.com/aroma_scentique?igsh=dmxsbnMzZ2M1OTIw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#3D2E24] hover:text-[#4A3426] transition-colors"
-                aria-label="Twitter"
+                aria-label="Instagram"
               >
-                <Twitter size={20} strokeWidth={1.5} />
+                <Instagram size={20} strokeWidth={1.5} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/josh-lendl-cagara-230020365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#3D2E24] hover:text-[#4A3426] transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} strokeWidth={1.5} />
               </Link>
             </div>
           </div>
