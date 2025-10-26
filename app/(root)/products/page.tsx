@@ -23,51 +23,52 @@ const Page = () => {
   const filteredAndSortedProducts = useMemo(() => {
     let filtered = [...products];
 
-    // Filter by general tab
-    if (activeTab === "bestsellers") {
-      filtered = filtered.filter((p) => p.bestSeller);
+    // Filter by general tab (all, newarrivals, bestsellers, featured)
+    if (activeTab === "newarrivals") {
+      filtered = filtered.filter((product) => product.newArrival);
+    } else if (activeTab === "bestsellers") {
+      filtered = filtered.filter((product) => product.bestSeller);
     } else if (activeTab === "featured") {
-      filtered = filtered.filter((p) => p.featured);
+      filtered = filtered.filter((product) => product.featured);
     }
 
-    // Filter by category
+    // Filter by category (MEN/WOMEN)
     if (selectedCategory !== "all") {
-      filtered = filtered.filter((p) => p.category === selectedCategory);
-    }
-
-    // Filter by search query
-    if (searchQuery) {
       filtered = filtered.filter(
-        (p) =>
-          p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.description.toLowerCase().includes(searchQuery.toLowerCase())
+        (product) => product.category === selectedCategory
       );
     }
 
-    // Sort products - only by name
-    if (sortBy === "name-asc") {
-      filtered.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (sortBy === "name-desc") {
-      filtered.sort((a, b) => b.name.localeCompare(a.name));
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(
+        (product) =>
+          product.name.toLowerCase().includes(query) ||
+          product.description.toLowerCase().includes(query)
+      );
     }
+
+    // Sort products
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case "name-asc":
+          return a.name.localeCompare(b.name);
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        default:
+          return 0;
+      }
+    });
 
     return filtered;
   }, [activeTab, selectedCategory, searchQuery, sortBy]);
 
-  const getSortLabel = () => {
-    switch (sortBy) {
-      case "name-asc":
-        return "Name: A-Z";
-      case "name-desc":
-        return "Name: Z-A";
-      default:
-        return "Name: A-Z";
-    }
-  };
-
   return (
     <>
       <ProductsHeroSection />
+
+      {/* Filters & Products Section */}
       <section
         className="py-12 md:py-16"
         style={{ backgroundColor: colors.background }}
@@ -76,88 +77,60 @@ const Page = () => {
           {/* General Filter Tabs */}
           <GeneralFilterTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
-          {/* Search Bar with Filter and Sort Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-6">
-            {/* Search Input */}
-            <div className="flex-1">
-              <ProductSearch
-                searchQuery={searchQuery}
-                onSearchChange={setSearchQuery}
-              />
-            </div>
+          {/* Search Bar */}
+          <div className="mb-6">
+            <ProductSearch
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+            />
+          </div>
 
-            {/* Filter Button */}
+          {/* Mobile Filter & Sort Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 mb-6 lg:hidden">
             <Button
-              onClick={() => {
-                setShowFilters(!showFilters);
-                setShowSortDropdown(false);
-              }}
-              className="h-14 px-6 font-montserrat text-sm font-semibold uppercase tracking-wide rounded-xl transition-all duration-300"
+              variant="outline"
+              onClick={() => setShowFilters(!showFilters)}
+              className="flex-1 font-montserrat text-sm py-6 border-2"
               style={{
-                backgroundColor: showFilters ? colors.brown : colors.card,
-                color: showFilters ? colors.primaryForeground : colors.primary,
-                border: `2px solid ${colors.border}`,
+                borderColor: colors.brown,
+                color: colors.brown,
               }}
             >
-              <SlidersHorizontal className="mr-2" size={20} />
-              Filters
+              <SlidersHorizontal className="mr-2" size={18} />
+              Filter by Category
             </Button>
 
-            {/* Sort By Button */}
-            <div className="relative">
+            <div className="flex-1 relative">
               <Button
-                onClick={() => {
-                  setShowSortDropdown(!showSortDropdown);
-                  setShowFilters(false);
-                }}
-                className="h-14 px-6 font-montserrat text-sm font-semibold uppercase tracking-wide rounded-xl transition-all duration-300 w-full sm:w-auto"
+                variant="outline"
+                onClick={() => setShowSortDropdown(!showSortDropdown)}
+                className="w-full font-montserrat text-sm py-6 border-2"
                 style={{
-                  backgroundColor: showSortDropdown
-                    ? colors.brown
-                    : colors.card,
-                  color: showSortDropdown
-                    ? colors.primaryForeground
-                    : colors.primary,
-                  border: `2px solid ${colors.border}`,
+                  borderColor: colors.brown,
+                  color: colors.brown,
                 }}
               >
-                Sort By
-                <ChevronDown
-                  className="ml-2"
-                  size={20}
-                  style={{
-                    transform: showSortDropdown
-                      ? "rotate(180deg)"
-                      : "rotate(0deg)",
-                    transition: "transform 0.3s ease",
-                  }}
-                />
+                Sort
+                <ChevronDown className="ml-2" size={18} />
               </Button>
 
-              {/* Sort Dropdown */}
               {showSortDropdown && (
                 <div
-                  className="absolute right-0 top-full mt-2 w-64 rounded-xl shadow-2xl z-50 overflow-hidden"
+                  className="absolute top-full left-0 right-0 mt-2 rounded-lg shadow-lg z-10 border-2"
                   style={{
                     backgroundColor: colors.card,
-                    border: `2px solid ${colors.border}`,
+                    borderColor: colors.border,
                   }}
                 >
-                  <ProductSort
-                    sortBy={sortBy}
-                    onSortChange={(value) => {
-                      setSortBy(value);
-                      setShowSortDropdown(false);
-                    }}
-                  />
+                  <ProductSort sortBy={sortBy} onSortChange={setSortBy} />
                 </div>
               )}
             </div>
           </div>
 
-          {/* Category Filter - Shows when filter button is clicked */}
+          {/* Mobile Category Filter (Collapsible) */}
           {showFilters && (
-            <div className="mb-6 animate-in slide-in-from-top-4 duration-300">
+            <div className="mb-6 lg:hidden">
               <CategoryFilter
                 selectedCategory={selectedCategory}
                 onCategoryChange={setSelectedCategory}
@@ -165,31 +138,49 @@ const Page = () => {
             </div>
           )}
 
-          {/* Product Count and Current Sort Display */}
-          <div className="flex items-center justify-between mb-6">
-            <p
-              className="text-sm font-inter"
-              style={{ color: colors.mutedForeground }}
-            >
-              Showing{" "}
-              <span className="font-semibold" style={{ color: colors.primary }}>
-                {filteredAndSortedProducts.length}
-              </span>{" "}
-              {filteredAndSortedProducts.length === 1 ? "product" : "products"}
-            </p>
-            <p
-              className="text-sm font-inter hidden sm:block"
-              style={{ color: colors.mutedForeground }}
-            >
-              Sorted by:{" "}
-              <span className="font-semibold" style={{ color: colors.primary }}>
-                {getSortLabel()}
-              </span>
-            </p>
-          </div>
+          {/* Desktop Layout */}
+          <div className="flex gap-8">
+            {/* Sidebar Filters (Desktop) */}
+            <aside className="hidden lg:block w-64 shrink-0">
+              <div className="sticky top-24 space-y-6">
+                <div>
+                  <h3
+                    className="text-lg font-playfair font-bold mb-4"
+                    style={{ color: colors.primary }}
+                  >
+                    Category
+                  </h3>
+                  <CategoryFilter
+                    selectedCategory={selectedCategory}
+                    onCategoryChange={setSelectedCategory}
+                  />
+                </div>
 
-          {/* Products List */}
-          <ProductsList products={filteredAndSortedProducts} />
+                <div>
+                  <h3
+                    className="text-lg font-playfair font-bold mb-4"
+                    style={{ color: colors.primary }}
+                  >
+                    Sort By
+                  </h3>
+                  <div
+                    className="rounded-lg border-2"
+                    style={{
+                      backgroundColor: colors.card,
+                      borderColor: colors.border,
+                    }}
+                  >
+                    <ProductSort sortBy={sortBy} onSortChange={setSortBy} />
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            {/* Products Grid */}
+            <div className="flex-1">
+              <ProductsList products={filteredAndSortedProducts} />
+            </div>
+          </div>
         </div>
       </section>
     </>

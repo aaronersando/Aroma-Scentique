@@ -15,6 +15,13 @@ const ProductImagesSection: React.FC<ProductImagesSectionProps> = ({
 }) => {
   const [selectedImage, setSelectedImage] = useState(0);
 
+  // Determine grid layout based on number of images
+  const getGridColumns = () => {
+    if (images.length === 2) return "grid-cols-2";
+    if (images.length === 3) return "grid-cols-3";
+    return "grid-cols-4"; // 4 images
+  };
+
   return (
     <div className="lg:col-span-6">
       {/* Main Image */}
@@ -31,16 +38,16 @@ const ProductImagesSection: React.FC<ProductImagesSectionProps> = ({
         />
       </div>
 
-      {/* Thumbnail Images - Now 3 columns */}
-      <div className="grid grid-cols-3 gap-4">
-        {images.slice(0, 3).map((image, index) => (
+      {/* Thumbnail Images - Responsive grid based on image count */}
+      <div className={`grid ${getGridColumns()} gap-4`}>
+        {images.map((image, index) => (
           <button
             key={index}
             onClick={() => setSelectedImage(index)}
-            className={`relative aspect-square overflow-hidden rounded-xl border-2 transition-all duration-300 ${
+            className={`relative aspect-square overflow-hidden rounded-lg border-2 transition-all duration-300 ${
               selectedImage === index
-                ? "ring-4 ring-offset-2"
-                : "hover:opacity-75"
+                ? "ring-4 ring-opacity-50"
+                : "hover:opacity-80"
             }`}
             style={{
               borderColor:

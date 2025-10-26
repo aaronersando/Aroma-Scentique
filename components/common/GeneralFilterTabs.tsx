@@ -14,6 +14,7 @@ const GeneralFilterTabs: React.FC<GeneralFilterTabsProps> = ({
 }) => {
   const tabs = [
     { id: "all", label: "ALL PRODUCTS" },
+    { id: "newarrivals", label: "NEW ARRIVALS" }, // Added new tab
     { id: "bestsellers", label: "BEST SELLERS" },
     { id: "featured", label: "FEATURED" },
   ];
