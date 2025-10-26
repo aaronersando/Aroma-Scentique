@@ -46,7 +46,7 @@ const ContactForm = () => {
         message: formData.message,
       };
 
-      console.log("📧 Sending emails with params:", {
+      console.log("Sending emails with params:", {
         service: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         template1: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         template2: process.env.NEXT_PUBLIC_EMAILJS_AUTO_REPLY_TEMPLATE_ID,
@@ -54,22 +54,22 @@ const ContactForm = () => {
       });
 
       // Send FIRST email: Notification to FOUNDER
-      console.log("📤 Sending founder notification...");
+      console.log(" Sending founder notification...");
       const founderResponse = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         templateParams
       );
-      console.log("✅ Founder notification sent:", founderResponse);
+      console.log("Founder notification sent:", founderResponse);
 
       // Send SECOND email: Auto-reply to CUSTOMER
-      console.log("📤 Sending customer auto-reply...");
+      console.log("Sending customer auto-reply...");
       const customerResponse = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_AUTO_REPLY_TEMPLATE_ID!,
         templateParams
       );
-      console.log("✅ Customer auto-reply sent:", customerResponse);
+      console.log("Customer auto-reply sent:", customerResponse);
 
       setStatus({
         type: "success",
@@ -91,7 +91,7 @@ const ContactForm = () => {
       }, 5000);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
-      console.error("❌ EmailJS Error Details:", {
+      console.error("EmailJS Error Details:", {
         error,
         text: error?.text,
         status: error?.status,
