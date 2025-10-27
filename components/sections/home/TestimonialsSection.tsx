@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
       avatar: "/Client_3.jpeg",
       rating: 5,
       testimonial:
-        "Baccarat Rouge Inspired is stunning — it lingers beautifully and gets me compliments every time.",
+        "Baccarat Rouge Inspired is intoxicating — it lingers like a whispered caress and draws admiring compliments wherever I go",
     },
   ];
 
