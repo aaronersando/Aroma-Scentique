@@ -9,8 +9,8 @@ const TestimonialsSection = () => {
     {
       id: 1,
       name: "Christian Vargas",
-      location: "Bulacan, PH",
-      avatar: "https://i.pravatar.cc/150?img=20",
+      location: "Manila, PH",
+      avatar: "/Client_1.jpeg",
       rating: 5,
       testimonial:
         "Invictus Inspired is my everyday scent now — fresh, powerful, and lasts all day. Totally worth it!",
@@ -18,8 +18,8 @@ const TestimonialsSection = () => {
     {
       id: 2,
       name: "Patrick Jerome Custodio",
-      location: "Manila, PH",
-      avatar: "https://i.pravatar.cc/150?img=47",
+      location: "Bulacan, PH",
+      avatar: "/Client_2.jpeg",
       rating: 5,
       testimonial:
         "Acqua Di Gio Inspired smells premium and clean. My friends can’t even tell it’s not the designer one.",
@@ -27,8 +27,8 @@ const TestimonialsSection = () => {
     {
       id: 3,
       name: "Aldrin San Pedro",
-      location: "Malolos, Bulacan",
-      avatar: "https://i.pravatar.cc/150?img=56",
+      location: "Bulacan, PH",
+      avatar: "/Client_3.jpeg",
       rating: 5,
       testimonial:
         "Baccarat Rouge Inspired is stunning — it lingers beautifully and gets me compliments every time.",
