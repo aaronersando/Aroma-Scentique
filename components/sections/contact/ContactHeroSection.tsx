@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { colors } from "@/lib/colors";
 
 const ContactHeroSection = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,7 +16,7 @@ const ContactHeroSection = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
@@ -28,7 +28,7 @@ const ContactHeroSection = () => {
     },
   };
 
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
@@ -40,7 +40,7 @@ const ContactHeroSection = () => {
     },
   };
 
-  const highlightVariants = {
+  const highlightVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {
       opacity: 1,
