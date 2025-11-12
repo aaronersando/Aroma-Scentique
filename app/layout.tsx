@@ -38,9 +38,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Aroma Scentique - Artisanal Perfumes",
+  title: "Aroma Scentique - Artisanal Inspired Perfumes",
   description:
-    "Artisanal perfumes inspired by nature. Discover our top picks and signature scents.",
+    "Artisanal perfumes inspired by famous scents worldwide. Discover our top picks and signature scents.",
 };
 
 export default function RootLayout({
