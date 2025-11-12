@@ -36,6 +36,7 @@ const FAQSection = () => {
   return (
     <section
       className="py-16 md:py-24"
+      id="faq"
       style={{ backgroundColor: colors.background }}
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
