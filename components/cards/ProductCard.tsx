@@ -13,6 +13,11 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  // Safety check
+  if (!product || !product.id) {
+    return null;
+  }
+
   return (
     <Link href={`/products/${product.id}`}>
       <motion.div
