@@ -2,19 +2,30 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 import { colors } from "@/lib/colors";
 
 const MeetFounderSection = () => {
   return (
     <section
-      className="py-20 md:py-32"
+      className="py-20 md:py-32 overflow-hidden"
       style={{ backgroundColor: colors.background }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div
-            className="w-24 h-1 mx-auto mb-6"
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "6rem" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="h-1 mx-auto mb-6"
             style={{ backgroundColor: colors.gold }}
           />
           <h2
@@ -23,27 +34,48 @@ const MeetFounderSection = () => {
           >
             Meet Our <span style={{ color: colors.goldDark }}>Founder</span>
           </h2>
-          <p
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg font-inter max-w-2xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
             The visionary behind Aroma Scentique&apos;s artistry
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Professional Photo */}
-          <div className="order-1 lg:order-1 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="order-1 lg:order-1 flex justify-center"
+          >
             <div className="relative w-full max-w-md">
               {/* Decorative Frame */}
-              <div
-                className="absolute -inset-4 rounded-3xl opacity-20"
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 0.2, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="absolute -inset-4 rounded-3xl"
                 style={{ backgroundColor: colors.gold }}
               />
 
               {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-2xl">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                whileHover={{ scale: 1.02 }}
+                className="relative aspect-square overflow-hidden rounded-2xl shadow-2xl"
+              >
                 <Image
                   src="/Founder_Image.jpg"
                   alt="Joseph Cagara - Founder of Aroma Scentique"
@@ -51,10 +83,14 @@ const MeetFounderSection = () => {
                   className="object-cover"
                   priority
                 />
-              </div>
+              </motion.div>
 
               {/* Name Plate */}
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
                 className="mt-6 p-6 rounded-xl shadow-lg text-center"
                 style={{ backgroundColor: colors.card }}
               >
@@ -70,23 +106,37 @@ const MeetFounderSection = () => {
                 >
                   Founder & Master Perfumer
                 </p>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Text Content */}
-          <div className="order-2 lg:order-2 space-y-8">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="order-2 lg:order-2 space-y-8"
+          >
             {/* Story */}
             <div>
-              <h3
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-2xl md:text-3xl font-playfair font-bold mb-4"
                 style={{ color: colors.primary }}
               >
                 A Journey Through{" "}
                 <span style={{ color: colors.goldDark }}>Scent</span>
-              </h3>
+              </motion.h3>
               <div className="space-y-4">
-                <p
+                <motion.p
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
@@ -94,8 +144,12 @@ const MeetFounderSection = () => {
                   Inspired by how scents can express emotion and confidence,
                   Joseph wanted to make the art of perfumery accessible to
                   everyone.
-                </p>
-                <p
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
                   className="text-base font-inter leading-relaxed"
                   style={{ color: colors.foreground }}
                 >
@@ -104,12 +158,16 @@ const MeetFounderSection = () => {
                   with local artistry. Each perfume is crafted with precision,
                   passion, and purpose — a testament to his dedication to the
                   craft.
-                </p>
+                </motion.p>
               </div>
             </div>
 
             {/* Quote Card */}
-            <div
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               className="px-6 py-5 md:px-8 md:py-6 rounded-2xl"
               style={{
                 backgroundColor: colors.goldLight,
@@ -129,8 +187,12 @@ const MeetFounderSection = () => {
                 it leaves behind.
               </p>
               <div className="flex items-center gap-2">
-                <div
-                  className="w-8 h-px"
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "2rem" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  className="h-px"
                   style={{ backgroundColor: colors.gold }}
                 />
                 <p
@@ -140,10 +202,14 @@ const MeetFounderSection = () => {
                   Joseph Cagara
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Vision Statement */}
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
               className="p-6 rounded-xl border-l-4"
               style={{
                 backgroundColor: colors.card,
@@ -160,8 +226,8 @@ const MeetFounderSection = () => {
                 captures a moment, and every customer becomes part of the Aroma
                 Scentique family.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

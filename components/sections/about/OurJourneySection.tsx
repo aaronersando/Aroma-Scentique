@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "motion/react";
 import JourneyCard from "@/components/cards/JourneyCard";
 import { colors } from "@/lib/colors";
 
@@ -56,7 +57,7 @@ const OurJourneySection = () => {
       year: "2025",
       title: "Looking Ahead",
       description:
-        "The journey has just begun. We’re working to expand our collections, offer customizable fragrances, and reach more perfume lovers across the Philippines — keeping passion, quality, and sincerity at the heart of everything we do.",
+        "The journey has just begun. We're working to expand our collections, offer customizable fragrances, and reach more perfume lovers across the Philippines — keeping passion, quality, and sincerity at the heart of everything we do.",
       image:
         "https://images.unsplash.com/photo-1528368250370-51fa780d345b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9va2luZyUyMGFoZWFkfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=1000",
     },
@@ -64,11 +65,17 @@ const OurJourneySection = () => {
 
   return (
     <section
-      className="py-16 md:py-24"
+      className="py-16 md:py-24 overflow-hidden"
       style={{ backgroundColor: colors.secondary }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
+        >
           <h2
             className="text-4xl md:text-5xl font-playfair font-bold mb-4"
             style={{ color: colors.primary }}
@@ -79,19 +86,23 @@ const OurJourneySection = () => {
             className="text-base md:text-lg font-inter max-w-3xl mx-auto"
             style={{ color: colors.mutedForeground }}
           >
-            Aroma Scentique’s story is still unfolding. From humble beginnings
-            in 2024 to steady growth in 2025, every step has been guided by
-            passion, creativity, and community.
+            Aroma Scentique&apos;s story is still unfolding. From humble
+            beginnings in 2024 to steady growth in 2025, every step has been
+            guided by passion, creativity, and community.
           </p>
-        </div>
+        </motion.div>
 
         <div className="space-y-8">
           {journeyMilestones.map((milestone, index) => (
-            <JourneyCard
+            <motion.div
               key={milestone.id}
-              {...milestone}
-              isReversed={index % 2 !== 0}
-            />
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              <JourneyCard {...milestone} isReversed={index % 2 !== 0} />
+            </motion.div>
           ))}
         </div>
       </div>
