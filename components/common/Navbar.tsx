@@ -262,24 +262,26 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <motion.div
-            className="lg:hidden py-4 border-t border-[#C2B8AE]"
+            className="lg:hidden py-4 border-t border-[#C2B8AE] -mx-4 sm:-mx-6"
             variants={mobileMenuVariants}
             initial="hidden"
             animate="visible"
             exit="hidden"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col">
               <motion.div
                 variants={linkItem}
                 initial="hidden"
                 animate="visible"
+                whileHover={{ backgroundColor: "#D6CEC6" }}
+                className={`transition-colors ${
+                  isActive("/") ? "bg-[#D6CEC6]" : ""
+                }`}
               >
                 <Link
                   href="/"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide px-4 py-2 ${
-                    isActive("/") ? "bg-[#D6CEC6]" : ""
-                  }`}
+                  className="text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide py-3 block text-center w-full"
                 >
                   HOME
                 </Link>
@@ -289,13 +291,15 @@ const Navbar = () => {
                 variants={linkItem}
                 initial="hidden"
                 animate="visible"
+                whileHover={{ backgroundColor: "#D6CEC6" }}
+                className={`transition-colors ${
+                  isActive("/products") ? "bg-[#D6CEC6]" : ""
+                }`}
               >
                 <Link
                   href="/products"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide px-4 py-2 ${
-                    isActive("/products") ? "bg-[#D6CEC6]" : ""
-                  }`}
+                  className="text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide py-3 block text-center w-full"
                 >
                   PRODUCTS
                 </Link>
@@ -305,13 +309,15 @@ const Navbar = () => {
                 variants={linkItem}
                 initial="hidden"
                 animate="visible"
+                whileHover={{ backgroundColor: "#D6CEC6" }}
+                className={`transition-colors ${
+                  isActive("/about") ? "bg-[#D6CEC6]" : ""
+                }`}
               >
                 <Link
                   href="/about"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide px-4 py-2 ${
-                    isActive("/about") ? "bg-[#D6CEC6]" : ""
-                  }`}
+                  className="text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide py-3 block text-center w-full"
                 >
                   ABOUT
                 </Link>
@@ -321,13 +327,15 @@ const Navbar = () => {
                 variants={linkItem}
                 initial="hidden"
                 animate="visible"
+                whileHover={{ backgroundColor: "#D6CEC6" }}
+                className={`transition-colors ${
+                  isActive("/contact") ? "bg-[#D6CEC6]" : ""
+                }`}
               >
                 <Link
                   href="/contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide px-4 py-2 ${
-                    isActive("/contact") ? "bg-[#D6CEC6]" : ""
-                  }`}
+                  className="text-[#3D2E24] font-montserrat text-sm font-medium uppercase tracking-wide py-3 block text-center w-full"
                 >
                   CONTACT
                 </Link>
@@ -337,11 +345,12 @@ const Navbar = () => {
                 variants={linkItem}
                 initial="hidden"
                 animate="visible"
+                className="px-4 sm:px-6 mt-4"
               >
                 <Link
                   href="/contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="mx-4 px-5 py-2.5 border border-[#6B4A2F] text-[#6B4A2F] font-montserrat text-sm font-medium uppercase tracking-wide rounded-xl text-center hover:bg-[#6B4A2F] hover:text-[#FAF8F6] transition-all duration-300"
+                  className="px-5 py-2.5 border border-[#6B4A2F] text-[#6B4A2F] font-montserrat text-sm font-medium uppercase tracking-wide rounded-xl text-center hover:bg-[#6B4A2F] hover:text-[#FAF8F6] transition-all duration-300 block"
                 >
                   Contact Us
                 </Link>
